@@ -3,7 +3,7 @@
 require('assert');
 
 const should = require('should');
-const Vorpal = require('vorpal')();
+const Vorpal = require('vorpal');
 const chai = require('chai');
 
 const main = require('../index');
