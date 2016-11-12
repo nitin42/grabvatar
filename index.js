@@ -12,7 +12,7 @@ const error = chalk.bold.red;
 const info = chalk.bold.blue;
 
 /**
- * @param {String} {Number} data - Data from the command
+ * @exports
  */
 module.exports = function(vorpal) {
 	vorpal
