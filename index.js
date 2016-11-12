@@ -5,11 +5,19 @@ const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
 const image_downloader = require('image-downloader');
+const termImg = require('term-img');
 
 let identifier, SIZE;
 
 const error = chalk.bold.red;
 const info = chalk.bold.blue;
+
+/**
+ * @callback
+ */
+function fallback() {
+	console.log("Image not supported.");
+}
 
 /**
  * @exports
@@ -45,8 +53,11 @@ module.exports = function(vorpal) {
 	    		},
 			};
 			
+			const imagePath = path.join(__dirname + `/images/${identifier}.png`);	
+		
 			try {
 				image_downloader(options);
+				termImg(imagePath, {fallback});
 				cb();
 			} catch(err) {
 				this.log(error("⚠  Error occurred!"));
