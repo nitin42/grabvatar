@@ -4,7 +4,6 @@ const vorpal = require('vorpal')();
 const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
-const BARS = require('node-progress-bars');
 const image_downloader = require('image-downloader');
 
 let identifier, SIZE;
