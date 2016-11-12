@@ -10,7 +10,7 @@ npm install grabvatar --g
 
 ## Usage
 
-```bash
+```
 👔 help
 
   Commands:
