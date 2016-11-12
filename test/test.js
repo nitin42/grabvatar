@@ -12,6 +12,9 @@ let vorpal, stdout='';
 
 const expect = chai.expect;
 
+/**
+ * @param {String} {Number} data - Data from the command
+ */
 function stdoutFn(data) {
 	stdout += data;
 	return '';
