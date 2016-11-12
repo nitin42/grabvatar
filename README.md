@@ -1,6 +1,6 @@
 # Grabvatar
 
-An amazing tool to generate cool avatars for your profile picture given an ***adjunct***. Built with [vorpal.js](vorpal.js.org).
+An amazing tool to generate cool avatars for your profile picture given an ***adjunct***(identifier for your avatar). Built with [vorpal.js](vorpal.js.org).
 
 ## Install
 
