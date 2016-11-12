@@ -10,7 +10,7 @@ const main = require('../index');
 
 let vorpal, stdout;
 
-const { expect } = chai;
+const expect = chai.expect;
 
 function stdoutFn(data) {
 	stdout += data;
