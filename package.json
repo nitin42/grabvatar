@@ -1,0 +1,21 @@
+{
+  "name": "grabvatar",
+  "version": "0.0.1",
+  "description": "Create your favorite avatars with an adjunct !",
+  "main": "run.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "Nitin Tulswani <tulswani19@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "image-downloader": "^2.0.0",
+    "sharp": "^0.16.2",
+    "should": "^11.1.1"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
