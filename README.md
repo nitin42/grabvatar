@@ -1,2 +1,36 @@
-# grabvatar
-An amazing tool to generate cool avatars for your profile picture given an identifier.
+# Grabvatar
+
+An amazing tool to generate cool avatars for your profile picture given an ***adjunct***. Built with [vorpal.js](vorpal.js.org).
+
+## Install
+
+```
+npm install grabvatar --g
+```
+
+## Usage
+
+```bash
+👔 help
+
+  Commands:
+
+    help [command...]        Provides help for a given command.
+    exit                     Exits application.
+    Create [adjunct] [size]  Generates an avatar for user
+    But how?                 How it works?
+```
+
+
+## Contributing
+
+Add unit tests for any or changed functionaliy.
+
+## Release History
+
+0.0.1 Initial release
+
+## License
+
+ISC
+
