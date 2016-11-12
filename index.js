@@ -11,6 +11,9 @@ let identifier, SIZE;
 const error = chalk.bold.red;
 const info = chalk.bold.blue;
 
+/**
+ * @param {String} {Number} data - Data from the command
+ */
 module.exports = function(vorpal) {
 	vorpal
 		.command('Create [adjunct] [size]', 'Generates an avatar for user')
