@@ -8,7 +8,7 @@ const chai = require('chai');
 
 const main = require('../index');
 
-let vorpal, stdout;
+let vorpal, stdout='';
 
 const expect = chai.expect;
 
