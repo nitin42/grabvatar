@@ -1,5 +1,10 @@
+/**
+ * @author Nitin Tulswani <tulswani19@gmail.com>
+ */
+
 'use strict';
 
+/** Dependencies */
 const vorpal = require('vorpal')();
 const fs = require('fs');
 const path = require('path');
@@ -7,8 +12,10 @@ const chalk = require('chalk');
 const image_downloader = require('image-downloader');
 const termImg = require('term-img');
 
+/** @default */
 let identifier, SIZE;
 
+/** @instance - Instances of the chalk API */
 const error = chalk.bold.red;
 const info = chalk.bold.blue;
 
@@ -37,11 +44,19 @@ module.exports = function(vorpal) {
 			} else {
 				args.size = 200;
 			}
-
+			
+			/** @type {string} - File destination path */
 			const PATH = path.join(__dirname + `/images/${identifier}`);
-
+			
+			/** @type {string} - Representing the url for generating the avatars */
 			const url_avatar = `http://api.adorable.io/avatar/${SIZE}/${identifier}`;
 			
+			/**
+			 * @namespace
+			 * @property {string} options.url - URL for generating the avatars
+			 * @property {string} options.dest - Destination for saving the images
+			 * @property {function} options.done - Callback function
+			 */
 			let options = {
 	    		url: url_avatar,
 	    		dest: path.join(__dirname + `/images/${identifier}.png`),       
@@ -53,6 +68,9 @@ module.exports = function(vorpal) {
 	    		},
 			};
 			
+			/** 
+			 * @constant imagePath - Representing the downloaded image path
+			 */
 			const imagePath = path.join(__dirname + `/images/${identifier}.png`);	
 		
 			try {
